@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Home Page</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h2 {
+        background-color: red;
+        }
+    </style>
+    
+</head>
+<body>
+    <header></header>
+
+    <nav><a href="index.html">Home</a></nav>
+
+    <main>
+        <!--Inline style overrides the embedded style sheet.-->
+        <h1 style="color:green; background-color: purple;">Module</h1>
+
+        <h2>This is an example of the external style sheet</h2>
+
+        <p id="container">This is a paragraph element with the ID of container.</p>
+
+        <!--This is not a good code practice, the hmtl validator indicate error
+            for more than one element using same i.d identifier-->
+        <p id="container">This is another paragraph element with the ID of container.</p>
+
+        <h3 class="accent">This is a Header element, also with the CLASS of accent.</h3>
+
+        <p class="accent">This is a paragraph element with the CLASS of accent.</p>
+
+        <!--This has a different style than the others-->
+
+        <div id="divelement">This is the <span class="accent">descendant</span> div element</div>
+
+
+    </main>
+
+    <footer><div><p>This is footer text</p></div></footer>
+</body>
+</html>
